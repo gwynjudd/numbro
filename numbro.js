@@ -871,7 +871,11 @@
         }
 
         if (!languages[key]) {
-            throw new Error('Unknown language : ' + key);
+            if (key.indexOf('-') >= 0) {
+                return numbro.languageData(parentCulture(key));
+            } else {
+                throw new Error('Unknown language : ' + key);
+            }
         }
 
         return languages[key];
@@ -888,7 +892,11 @@
         }
 
         if (!cultures[code]) {
-            throw new Error('Unknown culture : ' + code);
+            if (code.indexOf('-') >= 0) {
+                return numbro.cultureData(parentCulture(code));
+            } else {
+                throw new Error('Unknown culture : ' + code);
+            }
         }
 
         return cultures[code];
