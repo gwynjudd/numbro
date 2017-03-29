@@ -7,6 +7,7 @@ exports['de-LI'] = require('./de-LI.js');
 exports['en-AU'] = require('./en-AU.js');
 exports['en-GB'] = require('./en-GB.js');
 exports['en-IE'] = require('./en-IE.js');
+exports['en-IN'] = require('./en-IN.js');
 exports['en-NZ'] = require('./en-NZ.js');
 exports['en-ZA'] = require('./en-ZA.js');
 exports['es-AR'] = require('./es-AR.js');
