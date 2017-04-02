@@ -152,7 +152,7 @@ module.exports = function(grunt) {
             return 'exports[\'' + file.replace('.js', '') + '\'] = require(\'./' + file + '\');';
         }).join('\n');
 
-        fs.writeFileSync(dir + '/index.js', '/* jshint sub: true */' + require('os').EOL);
+        fs.writeFileSync(dir + '/index.js', '/* jshint sub: true */\n');
         fs.appendFileSync(dir + '/index.js', langFiles);
     });
 
