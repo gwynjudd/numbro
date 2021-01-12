@@ -38,6 +38,6 @@
     }
     // Browser
     if (typeof window !== 'undefined' && window.numbro && window.numbro.culture) {
-        window.numbro.culture('en-gb', language);
+        window.numbro.culture(language.cultureCode, language);
     }
 }.call(typeof window === 'undefined' ? this : window));

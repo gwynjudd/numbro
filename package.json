@@ -1,6 +1,6 @@
 {
-  "name": "numbro",
-  "version": "1.10.1",
+  "name": "@sif/numbro",
+  "version": "1.10.2",
   "description": "Format and manipulate numbers.",
   "homepage": "http://numbrojs.com",
   "author": {
@@ -26,10 +26,13 @@
     "type": "git",
     "url": "https://github.com/foretagsplatsen/numbro"
   },
+  "publishConfig": {
+    "registry": "http://sifnzrandd1:8084/repository/npm-private/"
+  },
   "bugs": {
     "url": "https://github.com/foretagsplatsen/numbro/issues"
   },
-  "license" : "MIT",
+  "license": "MIT",
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-bump": "^0.8.0",
@@ -44,7 +47,8 @@
     "uglify-js": "^2.6.2"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "build": "grunt build"
   },
   "files": [
     "LICENSE",

@@ -34,6 +34,6 @@
     }
     // Browser
     if (typeof window !== 'undefined' && window.numbro && window.numbro.culture) {
-        window.numbro.culture('it-CH', language);
+        window.numbro.culture(language.cultureCode, language);
     }
 }.call(typeof window === 'undefined' ? this : window));
